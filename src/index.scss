@@ -1,1 +1,10 @@
-@import './styles/common.scss'
+@import './styles/common.scss';
+body {
+  color: $color-text;
+  background: $color-background;
+}
+
+body,
+#app {
+  height: 100vh;
+}
