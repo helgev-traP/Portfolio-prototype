@@ -1,15 +1,15 @@
-<script setup lang="ts">
+<script setup>
 import { RouterLink, RouterView } from 'vue-router'
 </script>
 
 <template>
-  <div :class="$style.container">
-    <RouterView />
-  </div>
+    ここはトップページ
 </template>
 
 <style lang="scss" module scoped>
-.container{
-
+.test{
+  height: 100px;
+  border: 1px solid;
+  padding: 10px;
 }
 </style>
