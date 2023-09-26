@@ -4,9 +4,9 @@
 
 <style lang="scss" module>
 .header {
-  display: grid;
   padding: 1rem;
   border-bottom: 2px solid;
-  border-bottom-color: black;
+  border-bottom-color: $color-secondary;
+  background-color: white;
 }
 </style>

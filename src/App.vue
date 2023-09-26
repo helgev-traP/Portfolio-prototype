@@ -6,21 +6,18 @@ import PageHeader from './UI/PageHeader.vue'
 
 <template>
   <div :class="$style.container">
-    <header :class="$style.header">
-      <page-header />
-    </header>
+    <page-header :class="$style.header" />
     <top-page />
   </div>
 </template>
 
 <style lang="scss" module>
-.container{
-  display: grid;
-  grid-template-rows: min-content 1fr;
-  background-color: $color-background;
-
+.container {
+  width: 100%;
+  height: 100%;
 }
-.header{
-  grid-row: 1;
+.header {
+  position: fixed;
+  width: 100%;
 }
 </style>
