@@ -3,7 +3,7 @@ import { RouterLink, RouterView } from 'vue-router'
 import TopPage from './pages/topPage.vue'
 import ContentPageTest from './pages/contentPageTest.vue'
 import PageHeader from './UI/PageHeader.vue'
-import { ref } from 'vue';
+import { ref } from 'vue'
 
 const isTopPage = ref(true)
 
