@@ -5,7 +5,7 @@ const emit = defineEmits(['moveToTop'])
 <template>
   <div :class="$style.content">
     これはコンテンツ
-    <button @click="emit('moveToTop', '/')">トップへ</button>
+    <button @click="emit('moveToTop')">トップへ</button>
   </div>
 </template>
 

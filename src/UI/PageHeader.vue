@@ -1,8 +1,12 @@
+<script setup lang="ts">
+const emit = defineEmits(['moveToTop'])
+</script>
+
 <template>
   <div :class="$style.header">
-    <div>へっだーとかの中身</div>
-    <RouterLink to="#content/test">テスト1ヘ</RouterLink>
-    <RouterLink to="#content/other">テスト2へ</RouterLink>
+    <div :class="$style.logo" @click="emit('moveToTop')">ロゴとなまえ</div>
+    <RouterLink @click="emit('moveToContent')" to="/test">テスト1ヘ</RouterLink>
+    <RouterLink @click="emit('moveToContent')" to="/other">テスト2へ</RouterLink>
   </div>
 </template>
 
@@ -15,5 +19,10 @@
 
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+}
+.logo{
+  height: 1rem;
+  width: 100px;
+  cursor: pointer;
 }
 </style>
