@@ -12,15 +12,18 @@ const emit = defineEmits(['moveToTop'])
 
 <style lang="scss" module>
 .header {
-  padding: 1rem;
+  height: $header-height;
   border-bottom: 2px solid;
   border-bottom-color: $color-secondary;
   background-color: white;
 
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-content: center;
 }
-.logo{
+.logo {
+  padding-left: 30px;
   height: 1rem;
   width: 100px;
   cursor: pointer;
