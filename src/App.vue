@@ -39,29 +39,26 @@ const moveToContent = () => {
 }
 .header {
   position: fixed;
-  height: $header-height;
   width: 100%;
   z-index: 200;
+  transition: $transition-time;
+  transition-timing-function: $transition-header-ease;
 }
 .headerHidden {
   top: -$header-height;
-  transition: $transition-time;
-  transition-timing-function: $transition-header-ease;
 }
 .headerShow {
   top: 0;
+}
+.topPage{
   transition: $transition-time;
-  transition-timing-function: $transition-header-ease;
+  transition-timing-function: $transition-content-ease;
 }
 .topPageShow {
   transform: scale(1);
-  transition: $transition-time;
-  transition-timing-function: $transition-content-ease;
 }
 .topPageHidden {
   transform: scale(0.75);
-  transition: $transition-time;
-  transition-timing-function: $transition-content-ease;
 }
 .content {
   position: fixed;
@@ -75,21 +72,20 @@ const moveToContent = () => {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  transition: $transition-time;
+  transition-timing-function: $transition-content-ease;
 }
 .contentShow {
   visibility: visible;
   opacity: 1;
   pointer-events: auto;
   transform: scale(1);
-  transition: $transition-time;
-  transition-timing-function: $transition-content-ease;
 }
 .contentHidden {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
   transform: scale(1.5);
-  transition: $transition-time;
-  transition-timing-function: $transition-content-ease;
 }
 </style>
