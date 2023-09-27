@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const emit = defineEmits(['moveToTop'])
+const emit = defineEmits(['moveToContent','moveToTop'])
 </script>
 
 <template>
