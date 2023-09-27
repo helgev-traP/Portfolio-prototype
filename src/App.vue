@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
+import {RouterView } from 'vue-router'
 import TopPage from './pages/topPage.vue'
 import PageHeader from './UI/PageHeader.vue'
-import { computed, ref } from 'vue'
+import { ref } from 'vue'
 
 const isTopPage = ref(true)
 
