@@ -1,13 +1,9 @@
-<script setup lang="ts">
-const emit = defineEmits(['moveToTop'])
-</script>
-
 <template>
   <div :class="$style.content">
-    これはコンテンツ
-    <button @click="emit('moveToTop', '/')">トップへ</button>
+    Page is loading?
   </div>
 </template>
+
 
 <style lang="scss" module>
 .content {
