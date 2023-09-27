@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
+import { RouterLink} from 'vue-router'
 const emit = defineEmits(['moveToContent'])
 </script>
 
