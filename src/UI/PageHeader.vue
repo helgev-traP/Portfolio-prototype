@@ -13,7 +13,7 @@ const emit = defineEmits(['moveToTop'])
 <style lang="scss" module>
 .header {
   height: $header-height;
-  border-bottom: 2px solid;
+  border-bottom: 1px solid;
   border-bottom-color: $color-secondary;
   background-color: white;
 
