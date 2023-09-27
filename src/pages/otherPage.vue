@@ -1,0 +1,21 @@
+<script setup lang="ts">
+const emit = defineEmits(['moveToTop'])
+</script>
+
+<template>
+  <div :class="$style.content">
+    これは何か他のコンテンツ
+    <button @click="emit('moveToTop')">トップへ</button>
+  </div>
+</template>
+
+<style lang="scss" module>
+.content {
+  width: calc(100% - 50vw);
+  height: calc(100% - 50vh);
+  padding: 50px;
+  border: 1px solid $color-secondary;
+  border-radius: 25px;
+  background-color: white;
+}
+</style>

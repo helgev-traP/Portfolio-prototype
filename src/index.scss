@@ -1,4 +1,3 @@
-@import './styles/common.scss';
 body {
   color: $color-text;
   background: $color-background;
@@ -7,4 +6,6 @@ body {
 body,
 #app {
   height: 100vh;
+  overflow: hidden;
+  font-family: '游ゴシック';
 }
