@@ -1,18 +1,17 @@
 <script setup lang="ts">
-import { RouterLink} from 'vue-router'
+import { RouterLink } from 'vue-router'
 const emit = defineEmits(['moveToContent'])
 </script>
 
 <template>
   <div :class="$style.container">
-    <div :class="$style.topPageContents">
-      <div>ここはトップページのコンテンツ</div>
-      <RouterLink :class="$style.routerLink" @click="emit('moveToContent')" to="/test"
-        >テスト1ヘ</RouterLink
-      >
-      <RouterLink :class="$style.routerLink" @click="emit('moveToContent')" to="/other"
-        >テスト2ヘ</RouterLink
-      >
+    <div :class="$style.content">
+      <div :class="$style.info">
+        info
+      </div>
+      <div >
+        youtube?
+      </div>
     </div>
   </div>
 </template>
@@ -26,29 +25,18 @@ const emit = defineEmits(['moveToContent'])
   align-items: center;
   justify-content: center;
 }
-.topPageContents {
-  padding: 100px;
-  border-radius: 50px;
+.content {
+  // for develop
+  border: 1px solid;
 
-  box-shadow:
-    5px 5px 10px rgba(0, 0, 0, 0.1),
-    -5px -5px 10px rgba(255, 255, 255, 0.5);
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  width: 80%;
+  height: 70%;//あとでmin-contentにする
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
-.routerLink {
-  border: none;
-  border-radius: 1rem;
-  background-color: $color-background;
-  padding: 1rem;
-  margin: 1rem;
-  text-decoration: none;
-  color: $color-text;
-  box-shadow:
-    inset 5px 5px 10px rgba(0, 0, 0, 0.1),
-    inset -5px -5px 10px rgba(255, 255, 255, 0.5);
-  cursor: pointer;
+.info {
+  width: 100%;
+  
+
 }
 </style>
