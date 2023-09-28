@@ -44,7 +44,7 @@ const emit = defineEmits(['moveToContent'])
             src="https://abs.twimg.com/responsive-web/client-web/icon-ios.77d25eba.png"
           />
 
-          <a href="https://youtube.com/@_nanado_?feature=shared" :class="$style.icon">
+          <a href="https://misskey.io/@chiyuki" :class="$style.icon">
             <img
               src="https://s3.arkjp.net/misskey/webpublic-0c66b1ca-b8c0-4eaa-9827-47674f4a1580.png"
             />
