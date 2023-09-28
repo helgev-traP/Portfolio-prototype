@@ -5,12 +5,65 @@ const emit = defineEmits(['moveToContent'])
 
 <template>
   <div :class="$style.container">
-    <div :class="$style.content">
-      <div :class="$style.info">
-        info
+    <div :class="[$style.content]">
+      <div :class="[$style.info]">
+        <div :class="[$style.chiyuki]">千雪ふる</div>
+        <div :class="[$style.nanado]">nanado</div>
+        <div :class="[$style.god]">God is in the details</div>
+        <div :class="[$style.about]">
+          <RouterLink :class="$style.link" @click="emit('moveToContent')" to="/about"
+            >About</RouterLink
+          >
+          <RouterLink :class="$style.link" @click="emit('moveToContent')" to="/blog"
+            >Blog</RouterLink
+          >
+          <RouterLink :class="$style.link" @click="emit('moveToContent')" to="/workshop"
+            >WorkShop</RouterLink
+          >
+        </div>
+        <div :class="[$style.works]">
+          <RouterLink :class="$style.link" @click="emit('moveToContent')" to="/programing"
+            >Programing</RouterLink
+          >
+          <RouterLink :class="$style.link" @click="emit('moveToContent')" to="/movie"
+            >Movie</RouterLink
+          >
+          <RouterLink :class="$style.link" @click="emit('moveToContent')" to="/Music"
+            >Music</RouterLink
+          >
+        </div>
+        <div :class="[$style.sns]">
+          <img
+            :class="$style.icon"
+            src="https://www.youtube.com/s/desktop/c0b97319/img/favicon_144x144.png"
+          />
+          <img
+            :class="$style.icon"
+            src="https://www.youtube.com/s/desktop/c0b97319/img/favicon_144x144.png"
+          />
+          <img
+            :class="$style.icon"
+            src="https://abs.twimg.com/responsive-web/client-web/icon-ios.77d25eba.png"
+          />
+          <img
+            :class="$style.icon"
+            src="https://s3.arkjp.net/misskey/webpublic-0c66b1ca-b8c0-4eaa-9827-47674f4a1580.png"
+          />
+          <img
+            :class="$style.icon"
+            src="https://a-v2.sndcdn.com/assets/images/sc-icons/favicon-2cadd14bdb.ico"
+          />
+        </div>
       </div>
-      <div >
-        youtube?
+      <div :class="[]">
+        <iframe
+          :class="$style.youtube"
+          src="https://www.youtube-nocookie.com/embed/iT7nG-EKTR0?si=upBo2TbNek0GHp_i&amp;controls=0"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
       </div>
     </div>
   </div>
@@ -26,17 +79,95 @@ const emit = defineEmits(['moveToContent'])
   justify-content: center;
 }
 .content {
-  // for develop
-  border: 1px solid;
-
-  width: 80%;
-  height: 70%;//あとでmin-contentにする
+  width: 177.8vh;
+  height: min-content;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  transform: scale(1);
 }
 .info {
   width: 100%;
-  
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 3%;
+  grid-template-rows: 30% 20% 8% 4fr 4fr 5fr;
+  text-align: end;
 
+  position: relative;
+  left: -5vh;
+}
+.chiyuki {
+  grid-column: 1;
+  font-size: 15vh;
+  font-weight: 500;
+  position: relative;
+  left: 2.5vh;
+}
+.nanado {
+  grid-column: 1;
+  font-size: 8vh;
+}
+.god {
+  grid-column: 1;
+  font-size: 1vh;
+  letter-spacing: 3vh;
+  position: relative;
+  left: 2.1vh;
+}
+.about {
+  grid-column: 1;
+  grid-row: 4;
+}
+.works {
+  grid-column: 1;
+  grid-row: 5;
+}
+.about,
+.works {
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  border-right: 7px solid black;
+
+  position: relative;
+  left: -0.9vh;
+}
+.link {
+  width: 25vh;
+  font-size: 4vh;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+
+  position: inherit;
+  top: -0.8vh;
+
+  border-left: 1px solid;
+}
+.sns {
+  grid-column: 1;
+  grid-row: 6;
+
+  display: flex;
+  align-items: center;
+  justify-content: end;
+
+  position: relative;
+  left: -0.9vh;
+}
+.icon {
+  padding-left: 5vh;
+  width: 4vh;
+}
+//↓ for develop
+.border {
+  border: 1px solid;
+}
+.youtube {
+  height: 50vh;
+  width: 88.89vh;
+
+  position: relative;
+  left: -5vh;
 }
 </style>
