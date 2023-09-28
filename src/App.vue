@@ -60,13 +60,15 @@ const moveToContent = () => {
 }
 .topPageShow {
   transform: scale(1);
+  filter: brightness(1);
 }
 .topPageHidden {
   transform: scale(0.75);
+  filter: brightness(2);
 }
 .content {
   position: fixed;
-  background-color: rgba(255, 255, 255, 0.25);
+  background-color: rgba(0, 0, 0, 0);
   top: 0;
   right: 0;
   bottom: 0;
@@ -77,6 +79,7 @@ const moveToContent = () => {
   align-items: center;
   justify-content: center;
 
+
   transition: $transition-time;
   transition-timing-function: $transition-content-ease;
 }
@@ -85,11 +88,13 @@ const moveToContent = () => {
   opacity: 1;
   pointer-events: auto;
   transform: scale(1);
+  backdrop-filter: blur(20px);
 }
 .contentHidden {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
   transform: scale(1.5);
+  backdrop-filter: blur(0px);
 }
 </style>
