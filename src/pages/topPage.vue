@@ -5,24 +5,66 @@ const emit = defineEmits(['moveToContent'])
 
 <template>
   <div :class="$style.container">
-    <div :class="[$style.content, $style.border]">
-      <div :class="[$style.info, $style.border]">
-        <div :class="[$style.chiyuki, $style.border]">千雪ふる</div>
-        <div :class="[$style.nanado, $style.border]">nanado</div>
-        <div :class="[$style.god, $style.border]">God is in the details</div>
-        <div :class="[$style.about, $style.border]">
-          <RouterLink :class="$style.link" @click="emit('moveToContent')" to="/about">About</RouterLink>
-          <RouterLink :class="$style.link" @click="emit('moveToContent')" to="/blog">Blog</RouterLink>
-          <RouterLink :class="$style.link" @click="emit('moveToContent')" to="/workshop">WorkShop</RouterLink>
+    <div :class="[$style.content]">
+      <div :class="[$style.info]">
+        <div :class="[$style.chiyuki]">千雪ふる</div>
+        <div :class="[$style.nanado]">nanado</div>
+        <div :class="[$style.god]">God is in the details</div>
+        <div :class="[$style.about]">
+          <RouterLink :class="$style.link" @click="emit('moveToContent')" to="/about"
+            >About</RouterLink
+          >
+          <RouterLink :class="$style.link" @click="emit('moveToContent')" to="/blog"
+            >Blog</RouterLink
+          >
+          <RouterLink :class="$style.link" @click="emit('moveToContent')" to="/workshop"
+            >WorkShop</RouterLink
+          >
         </div>
-        <div :class="[$style.works, $style.border]">
-          <RouterLink :class="$style.link" @click="emit('moveToContent')" to="/programing">Programing</RouterLink>
-          <RouterLink :class="$style.link" @click="emit('moveToContent')" to="/movie">Movie</RouterLink>
-          <RouterLink :class="$style.link" @click="emit('moveToContent')" to="/Music">Music</RouterLink>
+        <div :class="[$style.works]">
+          <RouterLink :class="$style.link" @click="emit('moveToContent')" to="/programing"
+            >Programing</RouterLink
+          >
+          <RouterLink :class="$style.link" @click="emit('moveToContent')" to="/movie"
+            >Movie</RouterLink
+          >
+          <RouterLink :class="$style.link" @click="emit('moveToContent')" to="/Music"
+            >Music</RouterLink
+          >
         </div>
-        <div :class="[$style.sns, $style.border]"></div>
+        <div :class="[$style.sns]">
+          <img
+            :class="$style.icon"
+            src="https://www.youtube.com/s/desktop/c0b97319/img/favicon_144x144.png"
+          />
+          <img
+            :class="$style.icon"
+            src="https://www.youtube.com/s/desktop/c0b97319/img/favicon_144x144.png"
+          />
+          <img
+            :class="$style.icon"
+            src="https://abs.twimg.com/responsive-web/client-web/icon-ios.77d25eba.png"
+          />
+          <img
+            :class="$style.icon"
+            src="https://s3.arkjp.net/misskey/webpublic-0c66b1ca-b8c0-4eaa-9827-47674f4a1580.png"
+          />
+          <img
+            :class="$style.icon"
+            src="https://a-v2.sndcdn.com/assets/images/sc-icons/favicon-2cadd14bdb.ico"
+          />
+        </div>
       </div>
-      <div>youtube?</div>
+      <div :class="[]">
+        <iframe
+          :class="$style.youtube"
+          src="https://www.youtube-nocookie.com/embed/iT7nG-EKTR0?si=upBo2TbNek0GHp_i&amp;controls=0"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </div>
     </div>
   </div>
 </template>
@@ -37,8 +79,8 @@ const emit = defineEmits(['moveToContent'])
   justify-content: center;
 }
 .content {
-  width: calc(177.8vh + 10px);
-  height: 50vh; //あとでmin-contentにする
+  width: 177.8vh;
+  height: min-content;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
@@ -47,12 +89,16 @@ const emit = defineEmits(['moveToContent'])
   height: 100%;
   display: grid;
   grid-template-columns: 1fr 10px;
-  grid-template-rows: 30% 20% 25px 3fr 3fr 2fr;
+  grid-template-rows: 30% 20% 25px 4fr 4fr 5fr;
   text-align: end;
+
+  position: relative;
+  left: -5vh;
 }
 .chiyuki {
   grid-column: 1;
   font-size: 15vh;
+  font-weight: 500;
   position: relative;
   left: 20px;
 }
@@ -75,7 +121,8 @@ const emit = defineEmits(['moveToContent'])
   grid-column: 1;
   grid-row: 5;
 }
-.about, .works{
+.about,
+.works {
   display: flex;
   align-items: end;
   justify-content: end;
@@ -83,14 +130,6 @@ const emit = defineEmits(['moveToContent'])
 
   position: relative;
   left: -5px;
-}
-.sns {
-  grid-column: 1;
-  grid-row: 6;
-}
-//↓ for develop
-.borde r {
-  border: 1px solid;
 }
 .link {
   width: 25vh;
@@ -103,5 +142,31 @@ const emit = defineEmits(['moveToContent'])
   top: -8px;
 
   border-left: 1px solid;
+}
+.sns {
+  grid-column: 1;
+  grid-row: 6;
+
+  display: flex;
+  align-items: center;
+  justify-content: end;
+
+  position: relative;
+  left: -5px;
+}
+.icon {
+  padding-left: 5vh;
+  width: 4vh;
+}
+//↓ for develop
+.border {
+  border: 1px solid;
+}
+.youtube {
+  height: 50vh;
+  width: 88.89vh;
+
+  position: relative;
+  left: -5vh;
 }
 </style>
