@@ -6,6 +6,10 @@ import { ref } from 'vue'
 
 const isTopPage = ref(true)
 
+if (location.pathname !== '/') {
+  isTopPage.value = false
+}
+
 const moveToTop = () => {
   isTopPage.value = true
 }
