@@ -88,8 +88,8 @@ const emit = defineEmits(['moveToContent'])
   width: 100%;
   height: 100%;
   display: grid;
-  grid-template-columns: 1fr 10px;
-  grid-template-rows: 30% 20% 25px 4fr 4fr 5fr;
+  grid-template-columns: 1fr 3%;
+  grid-template-rows: 30% 20% 8% 4fr 4fr 5fr;
   text-align: end;
 
   position: relative;
@@ -100,7 +100,7 @@ const emit = defineEmits(['moveToContent'])
   font-size: 15vh;
   font-weight: 500;
   position: relative;
-  left: 20px;
+  left: 2.5vh;
 }
 .nanado {
   grid-column: 1;
@@ -108,10 +108,10 @@ const emit = defineEmits(['moveToContent'])
 }
 .god {
   grid-column: 1;
-  font-size: 10px;
-  letter-spacing: 1.7vw;
+  font-size: 1vh;
+  letter-spacing: 3vh;
   position: relative;
-  left: 18px;
+  left: 2.1vh;
 }
 .about {
   grid-column: 1;
@@ -129,7 +129,7 @@ const emit = defineEmits(['moveToContent'])
   border-right: 7px solid black;
 
   position: relative;
-  left: -5px;
+  left: -0.9vh;
 }
 .link {
   width: 25vh;
@@ -139,7 +139,7 @@ const emit = defineEmits(['moveToContent'])
   text-align: center;
 
   position: inherit;
-  top: -8px;
+  top: -0.8vh;
 
   border-left: 1px solid;
 }
@@ -152,7 +152,7 @@ const emit = defineEmits(['moveToContent'])
   justify-content: end;
 
   position: relative;
-  left: -5px;
+  left: -0.9vh;
 }
 .icon {
   padding-left: 5vh;
