@@ -83,6 +83,7 @@ const emit = defineEmits(['moveToContent'])
   height: min-content;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  transform: scale(1);
 }
 .info {
   width: 100%;
