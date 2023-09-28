@@ -33,11 +33,19 @@ const emit = defineEmits(['moveToContent'])
           >
         </div>
         <div :class="[$style.sns]">
-          <a href="https://youtube.com/@chiyuki_huru?feature=shared" :class="$style.icon">
-            <img src="https://www.youtube.com/s/desktop/c0b97319/img/favicon_144x144.png" />
+          <a href="https://youtube.com/@chiyuki_huru?feature=shared" :class="$style.youtubeIcon">
+            <img
+              :class="$style.icon"
+              src="https://www.youtube.com/s/desktop/c0b97319/img/favicon_144x144.png"
+            />
+            chiyuki
           </a>
-          <a href="https://youtube.com/@_nanado_?feature=shared" :class="$style.icon">
-            <img src="https://www.youtube.com/s/desktop/c0b97319/img/favicon_144x144.png" />
+          <a href="https://youtube.com/@_nanado_?feature=shared" :class="$style.youtubeIcon">
+            <img
+              :class="$style.icon"
+              src="https://www.youtube.com/s/desktop/c0b97319/img/favicon_144x144.png"
+            />
+            nanado
           </a>
           <img
             :class="[$style.icon, $style.X]"
@@ -162,10 +170,16 @@ const emit = defineEmits(['moveToContent'])
   top: -1vh;
   left: -0.9vh;
 }
+.youtubeIcon{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5vh;
+}
 .icon {
   margin-left: 5vh;
   height: 4vh;
-  width: 4vh;
 }
 .X,
 .soundcloud {
