@@ -127,7 +127,7 @@ const emit = defineEmits(['moveToContent'])
   display: flex;
   align-items: end;
   justify-content: end;
-  border-right: 7px solid black;
+  border-right: 7px solid $color-text;
 
   position: relative;
   left: -0.9vh;
@@ -135,7 +135,7 @@ const emit = defineEmits(['moveToContent'])
 .link {
   width: 25vh;
   font-size: 4vh;
-  color: black;
+  color: $color-text;
   text-decoration: none;
   text-align: center;
 

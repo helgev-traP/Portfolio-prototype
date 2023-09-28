@@ -15,7 +15,7 @@ const emit = defineEmits(['moveToContent','moveToTop'])
   height: $header-height;
   border-bottom: 1px solid;
   border-bottom-color: $color-secondary;
-  background-color: white;
+  background-color: $color-header;
 
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
