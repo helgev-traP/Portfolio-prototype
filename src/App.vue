@@ -31,19 +31,22 @@ const moveToContent = () => {
       :class="[$style.topPage, isTopPage ? $style.topPageShow : $style.topPageHidden]"
     />
     <div :class="[$style.content, isTopPage ? $style.contentHidden : $style.contentShow]">
-      <RouterView @move-to-top="moveToTop()" />
+      <div :class="$style.contentPage">
+        <RouterView @move-to-top="moveToTop()" />
+      </div>
     </div>
   </div>
 </template>
 
 <style lang="scss" module>
 .container {
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
+  transform: scale(1);
 }
+//Header
 .header {
   position: fixed;
-  width: 100%;
   z-index: 200;
   transition: $transition-time;
   transition-timing-function: $transition-header-ease;
@@ -54,6 +57,7 @@ const moveToContent = () => {
 .headerShow {
   top: 0;
 }
+//TopPage
 .topPage {
   transition: $transition-time;
   transition-timing-function: $transition-content-ease;
@@ -66,6 +70,7 @@ const moveToContent = () => {
   transform: scale(0.75);
   filter: brightness(2);
 }
+//Content
 .content {
   position: fixed;
   background-color: rgba(0, 0, 0, 0);
@@ -78,7 +83,6 @@ const moveToContent = () => {
   display: flex;
   align-items: center;
   justify-content: center;
-
 
   transition: $transition-time;
   transition-timing-function: $transition-content-ease;
@@ -96,5 +100,17 @@ const moveToContent = () => {
   pointer-events: none;
   transform: scale(1.5);
   backdrop-filter: blur(0px);
+}
+.contentPage {
+  width: 80vw;
+  height: calc(90vh - $header-height);
+  position: relative;
+  top: calc($header-height / 2);
+  padding: 50px;
+  border: 1px solid $color-glass-modal-edge;
+  border-radius: 25px;
+
+  background-color: $color-glass-modal;
+  backdrop-filter: blur(20px);
 }
 </style>
