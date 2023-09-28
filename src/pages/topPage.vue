@@ -33,24 +33,24 @@ const emit = defineEmits(['moveToContent'])
           >
         </div>
         <div :class="[$style.sns]">
+          <a href="https://youtube.com/@chiyuki_huru?feature=shared" :class="$style.icon">
+            <img src="https://www.youtube.com/s/desktop/c0b97319/img/favicon_144x144.png" />
+          </a>
+          <a href="https://youtube.com/@_nanado_?feature=shared" :class="$style.icon">
+            <img src="https://www.youtube.com/s/desktop/c0b97319/img/favicon_144x144.png" />
+          </a>
           <img
-            :class="$style.icon"
-            src="https://www.youtube.com/s/desktop/c0b97319/img/favicon_144x144.png"
-          />
-          <img
-            :class="$style.icon"
-            src="https://www.youtube.com/s/desktop/c0b97319/img/favicon_144x144.png"
-          />
-          <img
-            :class="$style.icon"
+            :class="[$style.icon, $style.X]"
             src="https://abs.twimg.com/responsive-web/client-web/icon-ios.77d25eba.png"
           />
+
+          <a href="https://youtube.com/@_nanado_?feature=shared" :class="$style.icon">
+            <img
+              src="https://s3.arkjp.net/misskey/webpublic-0c66b1ca-b8c0-4eaa-9827-47674f4a1580.png"
+            />
+          </a>
           <img
-            :class="$style.icon"
-            src="https://s3.arkjp.net/misskey/webpublic-0c66b1ca-b8c0-4eaa-9827-47674f4a1580.png"
-          />
-          <img
-            :class="$style.icon"
+            :class="[$style.icon, $style.soundcloud]"
             src="https://a-v2.sndcdn.com/assets/images/sc-icons/favicon-2cadd14bdb.ico"
           />
         </div>
@@ -90,7 +90,7 @@ const emit = defineEmits(['moveToContent'])
   height: 100%;
   display: grid;
   grid-template-columns: 1fr 3%;
-  grid-template-rows: 30% 20% 8% 4fr 4fr 5fr;
+  grid-template-rows: 30% 15% 8% 4fr 4fr 3fr;
   text-align: end;
 
   position: relative;
@@ -98,20 +98,25 @@ const emit = defineEmits(['moveToContent'])
 }
 .chiyuki {
   grid-column: 1;
-  font-size: 15vh;
+  font-size: 12vh;
   font-weight: 500;
   position: relative;
+  top: -4vh;
   left: 2.5vh;
 }
 .nanado {
   grid-column: 1;
-  font-size: 8vh;
+  font-size: 6vh;
+
+  position: relative;
+  top: -5vh;
 }
 .god {
   grid-column: 1;
   font-size: 1vh;
   letter-spacing: 3vh;
   position: relative;
+  top: -3vh;
   left: 2.1vh;
 }
 .about {
@@ -130,6 +135,7 @@ const emit = defineEmits(['moveToContent'])
   border-right: 7px solid $color-text;
 
   position: relative;
+  top: -2vh;
   left: -0.9vh;
 }
 .link {
@@ -149,19 +155,21 @@ const emit = defineEmits(['moveToContent'])
   grid-row: 6;
 
   display: flex;
-  align-items: center;
+  align-items: end;
   justify-content: end;
 
   position: relative;
+  top: -1vh;
   left: -0.9vh;
 }
 .icon {
-  padding-left: 5vh;
+  margin-left: 5vh;
+  height: 4vh;
   width: 4vh;
 }
-//↓ for develop
-.border {
-  border: 1px solid;
+.X,
+.soundcloud {
+  filter: blur(2px) grayscale(1);
 }
 .youtube {
   height: 50vh;

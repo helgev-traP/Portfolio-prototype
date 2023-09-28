@@ -104,13 +104,23 @@ const moveToContent = () => {
 .contentPage {
   width: 80vw;
   height: calc(90vh - $header-height);
+
   position: relative;
   top: calc($header-height / 2);
-  padding: 50px;
+
+  padding: 40px;
+  overflow-y: scroll;
+
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
   border: 1px solid $color-glass-modal-edge;
   border-radius: 25px;
 
   background-color: $color-glass-modal;
   backdrop-filter: blur(20px);
+}
+.contentPage::-webkit-scrollbar{
+  display: none;
 }
 </style>

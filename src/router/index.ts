@@ -1,7 +1,12 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import TopPageRouter from '../pages/topPageRouter.vue'
-import ConponentPageTest from '../pages/contentPageTest.vue'
-import OtherPage from '../pages/otherPage.vue'
+import TopPageRouter from '../pages/TopPageRouter.vue'
+import About from '../pages/About.vue'
+import Blog from '../pages/Blog.vue'
+import WorkShop from '../pages/WorkShop.vue'
+import Programing from '../pages/Programing.vue'
+import Movie from '../pages/Movie.vue'
+import Music from '../pages/Music.vue'
+
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -10,16 +15,30 @@ const router = createRouter({
       path: '/',
       name: 'hidden',
       component: TopPageRouter
-    },
-    {
-      path: '/test',
-      name: 'test',
-      component: ConponentPageTest
-    },
-    {
-      path: '/other',
-      name: 'other',
-      component: OtherPage
+    },{
+      path: '/about',
+      name: 'about',
+      component: About
+    },{
+      path: '/blog',
+      name: 'blog',
+      component: Blog
+    },{
+      path: '/workshop',
+      name: 'workshop',
+      component: WorkShop
+    },{
+      path: '/programing',
+      name: 'programing',
+      component: Programing
+    },{
+      path: '/movie',
+      name: 'movie',
+      component: Movie
+    },{
+      path: '/music',
+      name: 'music',
+      component: Music
     },
   ]
 })
