@@ -91,6 +91,7 @@ const emit = defineEmits(['moveToContent'])
   height: min-content;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
   transform: scale(1);
 }
 .info {
@@ -153,7 +154,7 @@ const emit = defineEmits(['moveToContent'])
   text-decoration: none;
   text-align: center;
 
-  position: inherit;
+  position: relative;
   top: -0.8vh;
 
   border-left: 1px solid;
@@ -170,7 +171,7 @@ const emit = defineEmits(['moveToContent'])
   top: -1vh;
   left: -0.9vh;
 }
-.youtubeIcon{
+.youtubeIcon {
   display: flex;
   flex-direction: row;
   align-items: center;

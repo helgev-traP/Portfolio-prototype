@@ -1,14 +1,19 @@
 <script setup lang="ts">
-const emit = defineEmits(['moveToContent','moveToTop'])
+const emit = defineEmits(['moveToContent', 'moveToTop'])
 </script>
 
 <template>
   <div :class="$style.header">
-    <div :class="$style.logo" @click="emit('moveToTop')">ロゴとなまえ</div>
+    <div :class="$style.logo" @click="emit('moveToTop')">千雪ふる | nanado</div>
+    <div :class="$style.divide"></div>
     <RouterLink :class="$style.link" @click="emit('moveToContent')" to="/about">About</RouterLink>
     <RouterLink :class="$style.link" @click="emit('moveToContent')" to="/blog">Blog</RouterLink>
-    <RouterLink :class="$style.link" @click="emit('moveToContent')" to="/workshop">WorkShop</RouterLink>
-    <RouterLink :class="$style.link" @click="emit('moveToContent')" to="/programing">Programing</RouterLink>
+    <RouterLink :class="$style.link" @click="emit('moveToContent')" to="/workshop"
+      >WorkShop</RouterLink
+    >
+    <RouterLink :class="$style.link" @click="emit('moveToContent')" to="/programing"
+      >Programing</RouterLink
+    >
     <RouterLink :class="$style.link" @click="emit('moveToContent')" to="/movie">Movie</RouterLink>
     <RouterLink :class="$style.link" @click="emit('moveToContent')" to="/music">Music</RouterLink>
   </div>
@@ -19,29 +24,29 @@ const emit = defineEmits(['moveToContent','moveToTop'])
   height: $header-height;
   width: 100vw;
   border-bottom: 1px solid;
-  border-bottom-color: $color-secondary;
-  background-color: $color-header;
+  border-bottom-color: $color-glass-modal-edge;
+  background-color: $color-glass-modal;
+  backdrop-filter: blur(20px);
 
-  display: grid;
-  grid-template-columns: 20% 1fr 1fr 1fr 1fr 1fr 1fr;
+  display: flex;
   align-items: center;
-  padding-left: 50px;
-  padding-right: 50px;
+  justify-content: space-between;
+  padding-left: 5vw;
+  padding-right: 10vw;
 }
 .logo {
-  height: 30px;
-  width: 180px;
   font-size: 20px;
-  text-align: center;
+  text-align: left;
   cursor: pointer;
-
-  border: 1px solid white;
+}
+.divide {
+  height: 30px;
+  border-right: 2px solid $color-glass-modal-edge;
 }
 .link {
   font-size: 20px;
   color: $color-text;
   text-decoration: none;
-  text-align: center;
-
+  text-align: right;
 }
 </style>

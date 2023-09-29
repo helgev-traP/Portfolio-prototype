@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import {RouterView } from 'vue-router'
-import TopPage from './pages/topPage.vue'
+import { RouterView } from 'vue-router'
+import TopPage from './pages/TopPage.vue'
 import PageHeader from './UI/PageHeader.vue'
 import { ref } from 'vue'
 
@@ -52,9 +52,11 @@ const moveToContent = () => {
   transition-timing-function: $transition-header-ease;
 }
 .headerHidden {
+  opacity: 0;
   top: -$header-height;
 }
 .headerShow {
+  opacity: 1;
   top: 0;
 }
 //TopPage
@@ -120,7 +122,7 @@ const moveToContent = () => {
   background-color: $color-glass-modal;
   backdrop-filter: blur(20px);
 }
-.contentPage::-webkit-scrollbar{
+.contentPage::-webkit-scrollbar {
   display: none;
 }
 </style>
