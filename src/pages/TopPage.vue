@@ -8,7 +8,7 @@ const emit = defineEmits(['moveToContent'])
     <div :class="[$style.content]">
       <div :class="[$style.info]">
         <div :class="[$style.chiyuki]">千雪ふる</div>
-        <div :class="[$style.nanado]">nanado</div>
+        <div :class="[$style.nanado]">♫nanado</div>
         <div :class="[$style.god]">God is in the details</div>
         <div :class="[$style.about]">
           <RouterLink :class="$style.link" @click="emit('moveToContent')" to="/about"
@@ -103,7 +103,7 @@ const emit = defineEmits(['moveToContent'])
   text-align: end;
 
   position: relative;
-  left: -5vh;
+  left: -6vh;
 }
 .chiyuki {
   grid-column: 1;
