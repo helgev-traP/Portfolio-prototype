@@ -118,9 +118,9 @@ const moveToContent = () => {
 
   border: 1px solid $color-glass-modal-edge;
   border-radius: 25px;
-
   background-color: $color-glass-modal;
   backdrop-filter: blur(20px);
+  box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.419);
 }
 .contentPage::-webkit-scrollbar {
   display: none;
