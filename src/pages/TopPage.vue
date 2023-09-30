@@ -94,6 +94,14 @@ const emit = defineEmits(['moveToContent'])
   grid-template-rows: 1fr;
   transform: scale(1);
 }
+@media (max-width: 1000px) {
+  .content {
+    width: 700px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
 .info {
   width: 100%;
   height: 100%;
