@@ -87,7 +87,7 @@ const emit = defineEmits(['moveToContent'])
   justify-content: center;
 }
 .content {
-  width: 177.8vh;
+  width: 1400px;
   height: min-content;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -103,30 +103,30 @@ const emit = defineEmits(['moveToContent'])
   text-align: end;
 
   position: relative;
-  left: -6vh;
+  left: -45px;
 }
 .chiyuki {
   grid-column: 1;
-  font-size: 12vh;
+  font-size: 90px;
   font-weight: 500;
   position: relative;
-  top: -4vh;
-  left: 2.5vh;
+  top: -29px;
+  left: 15px;
 }
 .nanado {
   grid-column: 1;
-  font-size: 6vh;
+  font-size: 47px;
 
   position: relative;
-  top: -5vh;
+  top: -36px;
 }
 .god {
   grid-column: 1;
-  font-size: 1vh;
-  letter-spacing: 3vh;
+  font-size: 10px;
+  letter-spacing: 24.3px;
   position: relative;
-  top: -3vh;
-  left: 2.1vh;
+  top: -15px;
+  left: 17px;
 }
 .about {
   grid-column: 1;
@@ -144,18 +144,18 @@ const emit = defineEmits(['moveToContent'])
   border-right: 7px solid $color-text;
 
   position: relative;
-  top: -2vh;
-  left: -0.9vh;
+  top: -7px;
+  left: -7px;
 }
 .link {
-  width: 25vh;
-  font-size: 4vh;
+  width: 190px;
+  font-size: 30px;
   color: $color-text;
   text-decoration: none;
   text-align: center;
 
   position: relative;
-  top: -0.8vh;
+  top: -6px;
 
   border-left: 1px solid;
 }
@@ -168,29 +168,28 @@ const emit = defineEmits(['moveToContent'])
   justify-content: end;
 
   position: relative;
-  top: -1vh;
-  left: -0.9vh;
+  left: -6px;
 }
 .youtubeIcon {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  font-size: 1.5vh;
+  font-size: 12px;
 }
 .icon {
-  margin-left: 5vh;
-  height: 4vh;
+  margin-left: 40px;
+  height: 30px;
 }
 .X,
 .soundcloud {
   filter: blur(2px) grayscale(1);
 }
 .youtube {
-  height: 50vh;
-  width: 88.89vh;
+  height: 100%;
+  width: 100%;
 
   position: relative;
-  left: -5vh;
+  left: -40px;
 }
 </style>
