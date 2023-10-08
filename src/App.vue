@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { RouterView } from 'vue-router'
-import TopPage from './pages/TopPage.vue'
+import TopPage from './TopPage/TopPage.vue'
 import PageHeader from './UI/PageHeader.vue'
 import { ref } from 'vue'
 
