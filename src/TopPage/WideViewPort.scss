@@ -1,0 +1,230 @@
+.container {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content {
+  width: 80%;
+  height: min-content;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  transform: scale(1);
+}
+.info {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 3%;
+  grid-template-rows: 30% 15% 8% 4fr 4fr 3fr;
+  text-align: end;
+
+  position: relative;
+  left: -6vh;
+}
+.chiyuki {
+  grid-column: 1;
+  font-size: 12vh;
+  font-weight: 500;
+  position: relative;
+  top: -4vh;
+  left: 2.5vh;
+}
+.nanado {
+  grid-column: 1;
+  font-size: 6vh;
+
+  position: relative;
+  top: -5vh;
+}
+.god {
+  grid-column: 1;
+  font-size: 1vh;
+  letter-spacing: 3vh;
+  position: relative;
+  top: -3vh;
+  left: 2.1vh;
+}
+.about {
+  grid-column: 1;
+  grid-row: 4;
+}
+.works {
+  grid-column: 1;
+  grid-row: 5;
+}
+.about,
+.works {
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  border-right: 7px solid $color-text;
+
+  position: relative;
+  top: -2vh;
+  left: -0.9vh;
+}
+.link {
+  width: 25vh;
+  font-size: 4vh;
+  color: $color-text;
+  text-decoration: none;
+  text-align: center;
+
+  position: relative;
+  top: -0.8vh;
+
+  border-left: 1px solid;
+}
+.sns {
+  grid-column: 1;
+  grid-row: 6;
+
+  display: flex;
+  align-items: end;
+  justify-content: end;
+
+  position: relative;
+  top: -1vh;
+  left: -0.9vh;
+}
+.youtubeIcon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5vh;
+}
+.icon {
+  margin-left: 5vh;
+  height: 4vh;
+}
+.X,
+.soundcloud {
+  filter: blur(2px) grayscale(1);
+}
+.youtube {
+  height: 100%;
+  width: 100%;
+
+  position: relative;
+  left: -5vh;
+}
+.container {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content {
+  width: 80%;
+  height: min-content;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  transform: scale(1);
+}
+.info {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 3%;
+  grid-template-rows: 30% 15% 8% 4fr 4fr 3fr;
+  text-align: end;
+
+  position: relative;
+  left: -6vh;
+}
+.chiyuki {
+  grid-column: 1;
+  font-size: 12vh;
+  font-weight: 500;
+  position: relative;
+  top: -4vh;
+  left: 2.5vh;
+}
+.nanado {
+  grid-column: 1;
+  font-size: 6vh;
+
+  position: relative;
+  top: -5vh;
+}
+.god {
+  grid-column: 1;
+  font-size: 1vh;
+  letter-spacing: 3vh;
+  position: relative;
+  top: -3vh;
+  left: 2.1vh;
+}
+.about {
+  grid-column: 1;
+  grid-row: 4;
+}
+.works {
+  grid-column: 1;
+  grid-row: 5;
+}
+.about,
+.works {
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  border-right: 7px solid $color-text;
+
+  position: relative;
+  top: -2vh;
+  left: -0.9vh;
+}
+.link {
+  width: 25vh;
+  font-size: 4vh;
+  color: $color-text;
+  text-decoration: none;
+  text-align: center;
+
+  position: relative;
+  top: -0.8vh;
+
+  border-left: 1px solid;
+}
+.sns {
+  grid-column: 1;
+  grid-row: 6;
+
+  display: flex;
+  align-items: end;
+  justify-content: end;
+
+  position: relative;
+  top: -1vh;
+  left: -0.9vh;
+}
+.youtubeIcon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5vh;
+}
+.icon {
+  margin-left: 5vh;
+  height: 4vh;
+}
+.X,
+.soundcloud {
+  filter: blur(2px) grayscale(1);
+}
+.youtube {
+  height: 100%;
+  width: 100%;
+
+  position: relative;
+  left: -5vh;
+}
