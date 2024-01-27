@@ -4,7 +4,14 @@ const emit = defineEmits(['moveToContent'])
 </script>
 
 <template>
+  <div :class="$style.container">
+    <RouterLink @click="emit('moveToContent')" to="/about"> about </RouterLink>
+  </div>
 </template>
 
 <style lang="scss" module>
+.container{
+  width: 100%;
+  height: 100%;
+}
 </style>
