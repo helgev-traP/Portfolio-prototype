@@ -1,9 +1,6 @@
 <template>
-  <div>
-    Loading?
-  </div>
+    隠し？
 </template>
 
 
-<style lang="scss" module>
-</style>
+<style lang="scss" module></style>

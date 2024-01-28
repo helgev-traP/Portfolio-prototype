@@ -20,7 +20,6 @@ import Title from '@/components/PageTitle.vue'
 .container {
   width: 100%;
   height: fit-content;
-  border: 1px white solid;
 }
 
 .profileCard {
@@ -34,7 +33,6 @@ import Title from '@/components/PageTitle.vue'
     display: flex;
     flex-direction: column;
     align-items: end;
-    border: 1px white solid;
   }
   .chiyuki{
     font-size: 5rem;

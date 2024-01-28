@@ -29,7 +29,7 @@
   height: 100%;
   width: 100%;
 
-  padding: 40px 30px 40px 40px;
+  padding: 10px 25px 40px 35px;
   overflow-y: scroll;
 
   -ms-overflow-style: none;

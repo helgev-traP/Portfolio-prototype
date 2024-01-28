@@ -22,8 +22,8 @@
 .title {
   width: 100%;
   font-weight: bold;
-  font-size: 4rem;
-
+  font-size: 3rem;
+  margin-bottom: 10px;
 }
 
 .bar {

@@ -1,7 +1,16 @@
 <script setup lang="ts">
-import { RouterView } from 'vue-router'
+import Title from '@/components/PageTitle.vue'
 </script>
 
 <template>
-  <div>Blog</div>
+  <div :class="$style.container">
+    <Title>Blog</Title>
+  </div>
 </template>
+
+<style lang="scss" module>
+.container {
+  width: 100%;
+  height: fit-content;
+}
+</style>
