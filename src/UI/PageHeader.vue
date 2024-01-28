@@ -8,12 +8,8 @@ const emit = defineEmits(['moveToContent', 'moveToTop'])
     <div :class="$style.divide"></div>
     <RouterLink :class="$style.link" @click="emit('moveToContent')" to="/about">About</RouterLink>
     <RouterLink :class="$style.link" @click="emit('moveToContent')" to="/blog">Blog</RouterLink>
-    <RouterLink :class="$style.link" @click="emit('moveToContent')" to="/workshop"
-      >WorkShop</RouterLink
-    >
-    <RouterLink :class="$style.link" @click="emit('moveToContent')" to="/programing"
-      >Programing</RouterLink
-    >
+    <RouterLink :class="$style.link" @click="emit('moveToContent')" to="/workshop">WorkShop</RouterLink>
+    <RouterLink :class="$style.link" @click="emit('moveToContent')" to="/programing">Programing</RouterLink>
     <RouterLink :class="$style.link" @click="emit('moveToContent')" to="/movie">Movie</RouterLink>
     <RouterLink :class="$style.link" @click="emit('moveToContent')" to="/music">Music</RouterLink>
   </div>
@@ -34,15 +30,18 @@ const emit = defineEmits(['moveToContent', 'moveToTop'])
   padding-left: 5vw;
   padding-right: 10vw;
 }
+
 .logo {
   font-size: 20px;
   text-align: left;
   cursor: pointer;
 }
+
 .divide {
   height: 30px;
   border-right: 2px solid $color-glass-modal-edge;
 }
+
 .link {
   font-size: 20px;
   color: $color-text;

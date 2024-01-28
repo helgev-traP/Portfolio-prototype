@@ -5,7 +5,7 @@ const emit = defineEmits(['moveToContent'])
 
 <template>
   <div :class="$style.container">
-    <RouterLink @click="emit('moveToContent')" to="/about"> about </RouterLink>
+    <RouterLink @click="emit('moveToContent')" to="/about"> go about </RouterLink>
   </div>
 </template>
 

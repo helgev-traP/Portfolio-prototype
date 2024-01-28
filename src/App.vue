@@ -2,6 +2,7 @@
 import { RouterView } from 'vue-router'
 import TopPage from './TopPage/TopPage.vue'
 import PageHeader from './UI/PageHeader.vue'
+import ContentField from './UI/ContentField.vue'
 import { ref } from 'vue'
 import router from './router';
 
@@ -20,7 +21,6 @@ const moveToTop = () => {
 
 const moveToContent = () => {
   isTopPage.value = false
-  router.push('/about')
 }
 </script>
 
@@ -31,9 +31,9 @@ const moveToContent = () => {
     <top-page @move-to-content="moveToContent()"
       :class="[$style.topPage, isTopPage ? $style.topPageShow : $style.topPageHidden]" />
     <div :class="[$style.content, isTopPage ? $style.contentHidden : $style.contentShow]">
-      <div :class="$style.contentPage">
+      <ContentField>
         <RouterView @move-to-top="moveToTop()" />
-      </div>
+      </ContentField>
     </div>
   </div>
 </template>
@@ -111,29 +111,5 @@ const moveToContent = () => {
   pointer-events: none;
   transform: scale(1.5);
   backdrop-filter: blur(0px);
-}
-
-.contentPage {
-  width: 80vw;
-  height: calc(90vh - $header-height);
-
-  position: relative;
-  top: calc($header-height / 2);
-
-  padding: 40px;
-  overflow-y: scroll;
-
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-
-  border: 1px solid $color-glass-modal-edge;
-  border-radius: 25px;
-  background-color: $color-glass-modal;
-  backdrop-filter: blur(20px);
-  box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.419);
-}
-
-.contentPage::-webkit-scrollbar {
-  display: none;
 }
 </style>
