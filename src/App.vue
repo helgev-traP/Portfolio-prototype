@@ -13,7 +13,10 @@ if (location.pathname !== '/') {
 
 const moveToTop = () => {
   isTopPage.value = true
-  setTimeout(() => { router.push('/') }, 1500)}
+  setTimeout(() => {
+    if (isTopPage.value == true) { router.push('/') }
+  }, 1500)
+}
 
 const moveToContent = () => {
   isTopPage.value = false
@@ -132,4 +135,5 @@ const moveToContent = () => {
 
 .contentPage::-webkit-scrollbar {
   display: none;
-}</style>
+}
+</style>
