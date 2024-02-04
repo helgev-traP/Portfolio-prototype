@@ -9,7 +9,7 @@ const emit = defineEmits(['moveToContent', 'moveToTop'])
     <RouterLink :class="$style.link" @click="emit('moveToContent')" to="/about">About</RouterLink>
     <RouterLink :class="$style.link" @click="emit('moveToContent')" to="/blog">Blog</RouterLink>
     <RouterLink :class="$style.link" @click="emit('moveToContent')" to="/workshop">WorkShop</RouterLink>
-    <RouterLink :class="$style.link" @click="emit('moveToContent')" to="/programing">Programing</RouterLink>
+    <RouterLink :class="$style.link" @click="emit('moveToContent')" to="/programming">Programming</RouterLink>
     <RouterLink :class="$style.link" @click="emit('moveToContent')" to="/movie">Movie</RouterLink>
     <RouterLink :class="$style.link" @click="emit('moveToContent')" to="/music">Music</RouterLink>
   </div>

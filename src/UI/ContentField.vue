@@ -4,7 +4,9 @@
 <template>
   <div :class="$style.cliper">
     <div :class="$style.contentField">
-      <slot></slot>
+      <div :class="$style.moveScrollbar">
+        <slot></slot>
+      </div>
     </div>
   </div>
   <!--
@@ -25,15 +27,11 @@
   overflow: hidden;
 }
 
+
 .contentField {
   height: 100%;
   width: 100%;
-
-  padding: 10px 25px 40px 35px;
-  overflow-y: scroll;
-
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+  padding: 0px 15px;
 
   border: 1px solid $color-glass-modal-edge;
   border-radius: 20px;
@@ -41,13 +39,22 @@
   backdrop-filter: blur(20px);
   box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.419);
 }
+.moveScrollbar {
+  height: 100%;
+  width: 100%;
+  padding: 10px 10px 40px 20px;
 
-.contentField::-webkit-scrollbar {
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.moveScrollbar::-webkit-scrollbar {
   width: 10px;
   background: transparent;
 }
 
-.contentField::-webkit-scrollbar-thumb {
+.moveScrollbar::-webkit-scrollbar-thumb {
   background: $color-glass-modal-scrollbar;
   border-radius: 5px;
 }

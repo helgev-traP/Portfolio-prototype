@@ -13,7 +13,7 @@ import Blog from '../pages/Blog/Blog.vue'
 import WorkShop from '../pages/WorkShop/WorkShop.vue'
 
 // Programing
-import Programing from '../pages/Programing/Programing.vue'
+import Programming from '../pages/Programming/Programming.vue'
 
 // Movie
 import Movie from '../pages/Movie/Movie.vue'
@@ -42,9 +42,9 @@ const router = createRouter({
       name: 'workshop',
       component: WorkShop,
     }, {
-      path: '/programing',
-      name: 'programing',
-      component: Programing,
+      path: '/programming',
+      name: 'programming',
+      component: Programming,
     }, {
       path: '/movie',
       name: 'movie',

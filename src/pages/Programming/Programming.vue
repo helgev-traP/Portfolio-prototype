@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import Title from '@/components/PageTitle.vue'
+import Page from '@/UI/ContentPage.vue'
 </script>
 
 <template>
   <div :class="$style.container">
-    <Title>Programing</Title>
+    <Page title="Programming"></Page>
   </div>
 </template>
 

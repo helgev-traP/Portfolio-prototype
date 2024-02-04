@@ -1,19 +1,20 @@
 <script setup lang="ts">
-import Title from '@/components/PageTitle.vue'
+import Page from '@/UI/ContentPage.vue'
 </script>
 
 <template>
-  <div :class="$style.container">
-    <Title>About</Title>
-    <div :class="$style.profileCard">
-      <img src="./img/コッホ曲線.png" style="width: 200px;" />
-      <div :class="$style.text">
-        <div :class="$style.chiyuki">
-          千雪ふる
+  <Page title="About">
+    <div :class="$style.container">
+      <div :class="$style.profileCard">
+        <img src="./img/コッホ曲線.png" style="width: 200px;" />
+        <div :class="$style.text">
+          <div :class="$style.chiyuki">
+            千雪ふる
+          </div>
         </div>
       </div>
     </div>
-  </div>
+  </Page>
 </template>
 
 <style lang="scss" module>
@@ -34,9 +35,10 @@ import Title from '@/components/PageTitle.vue'
     flex-direction: column;
     align-items: end;
   }
-  .chiyuki{
-    font-size: 5rem;
-    font-weight:500;
+
+  .chiyuki {
+    font-size: 3rem;
+    font-weight: 500;
   }
 }
 </style>

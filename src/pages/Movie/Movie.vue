@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import Title from '@/components/PageTitle.vue'
+import Page from '@/UI/ContentPage.vue'
 </script>
 
 <template>
   <div :class="$style.container">
-    <Title>Movie</Title>
+    <Page title="Movie"></Page>
   </div>
 </template>
 

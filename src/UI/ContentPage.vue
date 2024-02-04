@@ -1,12 +1,22 @@
 <script setup lang="ts">
+
+interface props {
+  title: String
+}
+
+defineProps<props>()
+
 </script>
 
 <template>
   <div :class="$style.container">
     <div :class="$style.title">
-      <slot>blank</slot>
+      {{ title }}
     </div>
     <div :class="$style.bar"></div>
+    <div :class="$style.pageContent">
+      <slot>blank</slot>
+    </div>
   </div>
 </template>
 
@@ -31,5 +41,9 @@
   border-bottom: 5px $color-glass-modal-scrollbar solid;
   border-radius: 5px;
   margin-bottom: 30px;
+}
+
+.pageContent{
+  width: calc(100% - 100px);
 }
 </style>

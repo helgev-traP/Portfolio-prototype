@@ -12,10 +12,14 @@ if (location.pathname !== '/') {
   isTopPage.value = false
 }
 
+const moveToTopID = ref(0)
+
 const moveToTop = () => {
   isTopPage.value = true
+  const ID = Math.random()
+  moveToTopID.value = ID
   setTimeout(() => {
-    if (isTopPage.value == true) { router.push('/') }
+    if (isTopPage.value === true && moveToTopID.value === ID) { router.push('/') }
   }, 1500)
 }
 
