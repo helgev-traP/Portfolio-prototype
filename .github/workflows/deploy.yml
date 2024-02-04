@@ -1,3 +1,7 @@
+# なろう講習会2023
+# https://traptitech.github.io/naro-text/chapter1/section2/2_publish.html
+# 完全にサイトができるまで公開は面倒
+
 # 引用元：https://ja.vitejs.dev/guide/static-deploy.html#github-pages
 # 静的コンテンツを GitHub Pages にデプロイするためのシンプルなワークフロー
 name: pf-test
@@ -26,7 +30,7 @@ jobs:
   deploy:
     environment:
       name: pf-test
-      url: ${{ chiyuki-pf-test }}
+      url: chiyuki-pf-test
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
