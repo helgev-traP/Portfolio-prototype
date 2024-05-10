@@ -8,7 +8,14 @@ import router from './router';
 
 const isTopPage = ref(true)
 
+/*
 if (location.pathname !== '/') {
+  isTopPage.value = false
+}
+*/
+
+// for github pages
+if (location.pathname !== '/Portfolio-prototype/') {
   isTopPage.value = false
 }
 
