@@ -46,7 +46,7 @@
 
   overflow-y: scroll;
   -ms-overflow-style: none;
-  scrollbar-width: none;
+  // scrollbar-width: none;
 }
 
 .moveScrollbar::-webkit-scrollbar {
@@ -55,6 +55,7 @@
 }
 
 .moveScrollbar::-webkit-scrollbar-thumb {
+  height: 5%;
   background: $color-glass-modal-scrollbar;
   border-radius: 5px;
 }

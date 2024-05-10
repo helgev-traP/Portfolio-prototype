@@ -38,12 +38,12 @@ defineProps<props>()
 
 .bar {
   width: 80%;
-  border-bottom: 5px $color-glass-modal-scrollbar solid;
-  border-radius: 5px;
+  border-bottom: 3px $color-glass-modal-scrollbar solid;
+  border-radius: 3px;
   margin-bottom: 30px;
 }
 
 .pageContent{
-  width: calc(100% - 100px);
+  width: calc(100% - 120px);
 }
 </style>

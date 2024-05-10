@@ -20,5 +20,6 @@ export default defineConfig({
         additionalData: `@import "${srcPath}/styles/common.scss";`
       }
     }
-  }
+  },
+  base: '/{Portfolio-prototype}/'
 })
