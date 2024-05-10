@@ -21,5 +21,5 @@ export default defineConfig({
       }
     }
   },
-  base: '/{Portfolio-prototype}/'
+  base: '/Portfolio-prototype/'
 })
