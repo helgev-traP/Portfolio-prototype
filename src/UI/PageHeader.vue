@@ -4,7 +4,7 @@ const emit = defineEmits(['moveToContent', 'moveToTop'])
 
 <template>
   <div :class="$style.header">
-    <div :class="$style.logo" @click="emit('moveToTop')">千雪ふる | nanado</div>
+    <div :class="$style.logo" @click="emit('moveToTop')">Helgev</div>
     <div :class="$style.divide"></div>
     <RouterLink :class="$style.link" @click="emit('moveToContent')" to="/about">About</RouterLink>
     <RouterLink :class="$style.link" @click="emit('moveToContent')" to="/blog">Blog</RouterLink>

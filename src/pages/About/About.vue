@@ -9,7 +9,7 @@ import Page from '@/UI/ContentPage.vue'
         <img src="./img/コッホ曲線.png" style="width: 200px;" />
         <div :class="$style.text">
           <div :class="$style.chiyuki">
-            千雪ふる
+            Helgev
           </div>
         </div>
       </div>
