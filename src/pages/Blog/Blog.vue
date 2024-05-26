@@ -5,7 +5,7 @@ import Page from '@/UI/ContentPage.vue'
 <template>
   <div :class="$style.container">
     <Page title="Blog">
-      <div :class="$style.box">super long box (test)</div>
+      blank
     </Page>
   </div>
 </template>
