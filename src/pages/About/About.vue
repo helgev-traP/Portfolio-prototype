@@ -19,7 +19,7 @@ import Heading from '@/UI/Heading.vue'
           <div :class="$style.sns">
             <a :class="[$style.link, $style.github]" href="https://github.com/helgev-traP">GitHub</a>
             <a :class="[$style.link, $style.atcoder]" href="https://atcoder.jp/users/helgev">AtCoder</a>
-            <a :class="[$style.link, $style.twitter]" href="https://github.com/helgev-traP">X | Twitter</a>
+            <a :class="[$style.link, $style.twitter]" href="https://twitter.com/helgev_">X | Twitter</a>
             <a :class="[$style.link, $style.trap]" href="https://trap.jp/author/helgev/">traP Blog</a>
           </div>
         </div>
