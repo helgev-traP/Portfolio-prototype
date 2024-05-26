@@ -44,7 +44,7 @@ const emit = defineEmits(['moveToContent'])
 <style lang="scss" module>
 h1 {
   font-size: 3rem;
-  margin: 0px -4px -10px;
+  margin: 0px -4px -8px;
 }
 
 .container {
@@ -56,8 +56,6 @@ h1 {
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
-
-  background-color: #1c1c1c;
 }
 
 .mid {
@@ -97,7 +95,7 @@ h1 {
 }
 
 .outerLinks {
-  margin-top: 13px;
+  margin-top: 11px;
   display: flex;
   justify-content: left;
   align-items: center;
@@ -111,10 +109,10 @@ h1 {
   text-decoration: none;
   color: #ffffff;
 
-  transition: transform 0.5s;
+  transition: transform 0.2s;
 
   &:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
     transition: transform 0.1s;
   }
 }
