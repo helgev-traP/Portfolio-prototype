@@ -10,7 +10,7 @@ const emit = defineEmits(['moveToContent'])
         <h1>Helgev</h1>
         Tokyo Tech
         <br />
-        A Creator. / A Engineering Student.
+        A Creator. / An Engineering Student.
         <br />
         <div :class="$style.outerLinks">
           <a :class="[$style.outerLink, $style.github]" href="https://github.com/helgev-traP"> GitHub </a>
