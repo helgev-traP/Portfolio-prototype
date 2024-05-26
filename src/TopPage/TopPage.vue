@@ -45,6 +45,8 @@ const emit = defineEmits(['moveToContent'])
 h1 {
   font-size: 3rem;
   margin: 0px -4px -8px;
+
+  font-family: "Yu Gothic", "YuGothic", "游ゴシック", "Meiryo", "メイリオ", sans-serif;
 }
 
 .container {
