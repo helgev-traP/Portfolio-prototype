@@ -68,7 +68,7 @@ h1 {
 
 .left {
   height: 180px;
-  width: 370px;
+  width: fit-content;
 }
 
 @media screen and (max-width: 850px) {
