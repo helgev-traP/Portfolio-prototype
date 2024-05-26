@@ -9,16 +9,18 @@ const emit = defineEmits(['moveToContent'])
       <div :class="$style.left">
         <h1>Helgev</h1>
         Tokyo Tech
-        <br/>
-        A creator / A engineering student
-        <br/>
+        <br />
+        A Creator. / A Engineering Student.
+        <br />
         <div :class="$style.outerLinks">
-          <a :class="$style.outerLink" href="https://github.com/helgev-traP"> GitHub </a>
-          <a :class="$style.outerLink" href="https://trap.jp/author/helgev/"> traP Blog </a>
+          <a :class="[$style.outerLink, $style.github]" href="https://github.com/helgev-traP"> GitHub </a>
+          <a :class="[$style.outerLink, $style.trap]" href="https://trap.jp/author/helgev/"> traP Blog </a>
+          <a :class="[$style.outerLink, $style.repository]" href="https://github.com/helgev-traP/Portfolio-prototype"> this site's repository
+          </a>
         </div>
       </div>
       <div :class="$style.right">
-        ❗❗This portfolio is under construction.
+        ❗❗This portfolio is under construction.(工事中です)
         <div :class="$style.links">
           <RouterLink :class="[$style.tile, $style.about]" @click="emit('moveToContent')" to="/about"> About
           </RouterLink>
@@ -48,41 +50,85 @@ h1 {
 .container {
   width: 100%;
   height: 100%;
+
+  display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #1c1c1c;
 }
 
 .mid {
   display: flex;
   flex-direction: row;
+  flex-flow: row wrap;
   justify-content: center;
   align-items: center;
-  height: 100%;
 }
 
 .left {
   height: 180px;
-  width: 300px;
+  width: 370px;
+}
+
+@media screen and (max-width: 850px) {
+  .mid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    width: 500px;
+    padding-bottom: 20px;
+    margin-bottom: 16px;
+    border-bottom: #ffffff 1px solid;
+  }
 }
 
 .outerLinks {
   margin-top: 13px;
   display: flex;
-  justify-content:left;
+  justify-content: left;
   align-items: center;
 }
 
 .outerLink {
   margin-right: 10px;
   padding: 1px 10px;
-  border: 1px solid #7f7f7f;
+  border: 1px solid #5e5e5e;
   border-radius: 5px;
   text-decoration: none;
   color: #ffffff;
+
   transition: transform 0.5s;
 
   &:hover {
     transform: scale(1.1);
     transition: transform 0.1s;
   }
+}
+
+.github {
+  background-color: #494949;
+}
+
+.trap {
+  background-color: #005bac;
+} 
+
+.repository {
+  background-color: #992e63;
 }
 
 .right {
@@ -101,7 +147,7 @@ h1 {
 .tile {
   margin: 10px;
   padding: 10px;
-  border: 1px solid #7f7f7f;
+  border: 1px solid #5e5e5e;
   border-radius: 5px;
   text-decoration: none;
   color: #ffffff;
