@@ -35,7 +35,7 @@ import Heading from '@/UI/Heading.vue'
         ちなみにアイコンはコッホ曲線です。なんと手書きです。
       </Heading>
       <Heading heading="This Portfolio">
-        Vueで制作中です。ここのAboutだけ出来ています。
+        Vueで制作中です。ここのAboutだけ半分出来ています。
       </Heading>
       <Heading heading="Skills">
         C++ | Rust | Python | Vue | Blender | Cakewalk
