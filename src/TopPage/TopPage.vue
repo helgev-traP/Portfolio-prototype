@@ -61,7 +61,6 @@ h1 {
   height: 140px;
   display: flex;
   flex-direction: row;
-  flex-flow: row wrap;
   justify-content: center;
   align-items: center;
 }
@@ -76,6 +75,7 @@ h1 {
 
 @media screen and (max-width: 850px) {
   .mid {
+    height: 320px;
     display: flex;
     flex-direction: column;
     justify-content: center;
