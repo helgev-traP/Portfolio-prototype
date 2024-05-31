@@ -58,18 +58,16 @@ h1 {
 }
 
 .mid {
-  height: 10rem;
+  height: 11rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-
-  border: #ffffff 1px solid;
 }
 
 .left {
-  height: calc(100% + 15px);
-  margin-top: -15px;
+  height: calc(100% + 5px);
+  margin-top: -5px;
   width: fit-content;
   display: flex;
   flex-direction: column;
