@@ -44,8 +44,6 @@ const emit = defineEmits(['moveToContent'])
 <style lang="scss" module>
 h1 {
   font-size: 3rem;
-  margin: 0px -4px -8px;
-
   font-family: "Yu Gothic", "YuGothic", "游ゴシック", "Meiryo", "メイリオ", sans-serif;
 }
 
@@ -55,12 +53,12 @@ h1 {
 
   display: flex;
   flex-direction: row;
-  flex-flow: row wrap;
   justify-content: center;
   align-items: center;
 }
 
 .mid {
+  height: 140px;
   display: flex;
   flex-direction: row;
   flex-flow: row wrap;
@@ -69,8 +67,11 @@ h1 {
 }
 
 .left {
-  height: 180px;
+  height: 100%;
   width: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 @media screen and (max-width: 850px) {
@@ -132,9 +133,10 @@ h1 {
 }
 
 .right {
+  height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -145,7 +147,7 @@ h1 {
 }
 
 .tile {
-  margin: 10px;
+  margin: 10px 10px 0px;
   padding: 10px;
   border: 1px solid #5e5e5e;
   border-radius: 5px;
