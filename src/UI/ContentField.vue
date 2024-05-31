@@ -17,7 +17,7 @@
 
 <style lang="scss" module>
 .cliper {
-  width: 80vw;
+  width: calc(80vw + 100px);
   height: calc(90vh - $header-height);
 
   position: relative;

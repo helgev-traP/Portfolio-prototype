@@ -44,6 +44,6 @@ defineProps<props>()
 }
 
 .pageContent{
-  width: calc(100% - 120px);
+  width: calc(100% - 10vw);
 }
 </style>

@@ -7,7 +7,7 @@ import Heading from '@/UI/Heading.vue'
   <Page title="About">
     <div :class="$style.container">
       <div :class="$style.profileCard">
-        <img src="./img/コッホ曲線.png" style="height: 100%; border-radius: 50px;" />
+        <img src="./img/コッホ曲線.png" :class="$style.icon" />
         <div :class="$style.text">
           <div :class="$style.helgev">
             Helgev
@@ -56,6 +56,13 @@ import Heading from '@/UI/Heading.vue'
   display: flex;
   flex-direction: row;
   text-align: right;
+  position: relative;
+
+  .icon {
+    height: 15rem;
+    border-radius: 50px;
+    position: absolute;
+  }
 
   .text {
     width: 100%;
@@ -63,6 +70,7 @@ import Heading from '@/UI/Heading.vue'
     flex-direction: column;
     justify-content: space-between;
     align-items: end;
+    z-index: 1;
   }
 
   .helgev {
@@ -72,6 +80,7 @@ import Heading from '@/UI/Heading.vue'
 
   .sns {
     margin-top: 10px;
+    width: max-content;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
